@@ -4,5 +4,23 @@
     "standard",
     "plugin:tailwindcss/recommended",
     "prettier"
-  ]
+  ],
+  "rules": {
+    // Disable rules that are often too strict for development
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/no-unescaped-entities": "off",
+    "prefer-const": "warn",
+    "no-unused-vars": "off",
+    "no-console": "warn",
+    "no-debugger": "warn",
+    "camelcase": "off",
+    "no-undef": "off",
+    // Tailwind specific
+    "tailwindcss/no-custom-classname": "off",
+    "tailwindcss/classnames-order": "warn"
+  }
 }

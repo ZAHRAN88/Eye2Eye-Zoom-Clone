@@ -1,459 +1,206 @@
-<div align="center">
-  <br />
-    <a href="https://youtu.be/R8CIO1DZ2b8" target="_blank">
-      <img src="https://github.com/adrianhajdin/zoom-clone/assets/67959015/f09a8421-67d3-45ce-b9bc-a791cdc2774b" alt="Project Banner">
-    </a>
-  
-  <br />
+# I2I - Video Conferencing Platform
 
-  <div>
-    <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />
-    <img src="https://img.shields.io/badge/-Next_JS-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000000" alt="nextdotjs" />
-    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
-  </div>
+A modern, feature-rich video conferencing platform built with Next.js , offering seamless video meetings, scheduling, and collaboration tools.
 
-  <h3 align="center">A Zoom Clone</h3>
+![I2I Platform](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Stream.io](https://img.shields.io/badge/Stream.io-005FFF?style=for-the-badge&logo=streamlit&logoColor=white)
 
-   <div align="center">
-     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
-    </div>
-</div>
+## ✨ Features
 
-## 📋 <a name="table">Table of Contents</a>
+### 🎥 Core Video Features
+- **Instant Meetings** - Start a video call immediately with a single click
+- **Scheduled Meetings** - Plan and schedule meetings for future dates
+- **Join by Link** - Easy meeting access via invitation links
+- **Meeting Recordings** - Record and replay important meetings
+- **Personal Room** - Dedicated space for recurring meetings
 
-1. 🤖 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🕸️ [Assets & Code](#snippets)
-6. 🚀 [More](#more)
+### 🔐 Authentication & Security
+- **Secure Authentication** - Powered by Clerk for robust user management
+- **Protected Routes** - All meeting features are secure and authenticated
+- **User Management** - Complete user profile and session management
 
-## 🚨 Tutorial
+### 🎨 User Experience
+- **Modern UI/UX** - Beautiful, responsive design with Tailwind CSS
+- **Dark Theme** - Professional dark interface optimized for video calls
+- **Mobile Responsive** - Works seamlessly across all devices
+- **Smooth Animations** - Enhanced with Framer Motion for fluid interactions
+- **Intuitive Navigation** - Easy-to-use sidebar and mobile navigation
 
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>. 
+### 📱 Meeting Management
+- **Upcoming Meetings** - View and manage scheduled meetings
+- **Previous Meetings** - Access meeting history
+- **Meeting Controls** - Full control over video, audio, and participants
+- **Real-time Features** - Powered by Stream.io's robust video infrastructure
 
-If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
+## 🚀 Tech Stack
 
-<a href="https://youtu.be/R8CIO1DZ2b8" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
+### Frontend
+- **[Next.js ](https://nextjs.org/)** - React framework with App Router
+- **[TypeScript](https://www.typescriptlang.org/)** - Type-safe development
+- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
+- **[Radix UI](https://www.radix-ui.com/)** - Accessible component primitives
+- **[Framer Motion](https://www.framer.com/motion/)** - Animation library
+- **[Lucide React](https://lucide.dev/)** - Beautiful icons
 
-## <a name="introduction">🤖 Introduction</a>
+### Backend & Services
+- **[Stream.io Video SDK](https://getstream.io/video/)** - Video calling infrastructure
+- **[Clerk](https://clerk.com/)** - Authentication and user management
+- **[React DatePicker](https://github.com/Hacker0x01/react-datepicker)** - Date/time selection
 
-Built with the latest Next.js and TypeScript, this project replicates Zoom, a widely used video conferencing tool. It enables users to securely log in, create meetings and access various meeting functionalities such as recording, screen sharing, and managing participants.
+### Development Tools
+- **ESLint** - Code linting with Prettier integration
+- **PostCSS** - CSS processing
+- **Autoprefixer** - CSS vendor prefixing
 
-If you're getting started and need assistance or face any bugs, join our active Discord community with over 30 thousand members. It's a place where people help each other out.
+## 📦 Installation
 
-<a href="https://discord.com/invite/n6EdbFJ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
+- Stream.io account
+- Clerk account
 
-## <a name="tech-stack">⚙️ Tech Stack</a>
-
-- Next.js
-- TypeScript
-- Clerk
-- getstream
-- shadcn
-- Tailwind CSS
-
-## <a name="features">🔋 Features</a>
-
-
-👉 **Authentication**: Implements authentication and authorization features using Clerk, allowing users to securely log in via social sign-on or traditional email and password methods, while ensuring appropriate access levels and permissions within the platform.
-
-👉 **New Meeting**: Quickly start a new meeting, configuring camera and microphone settings before joining.
-
-👉 **Meeting Controls**: Participants have full control over meeting aspects, including recording, emoji reactions, screen sharing, muting/unmuting, sound adjustments, grid layout, participant list view, and individual participant management (pinning, muting, unmuting, blocking, allowing video share).
-
-👉 **Exit Meeting**: Participants can leave a meeting, or creators can end it for all attendees.
-
-👉 **Schedule Future Meetings**: Input meeting details (date, time) to schedule future meetings, accessible on the 'Upcoming Meetings' page for sharing the link or immediate start.
-
-👉 **Past Meetings List**: Access a list of previously held meetings, including details and metadata.
-
-👉 **View Recorded Meetings**: Access recordings of past meetings for review or reference.
-
-👉 **Personal Room**: Users have a personal room with a unique meeting link for instant meetings, shareable with others.
-
-👉 **Join Meetings via Link**: Easily join meetings created by others by providing a link.
-
-👉 **Secure Real-time Functionality**: All interactions within the platform are secure and occur in real-time, maintaining user privacy and data integrity.
-
-👉 **Responsive Design**: Follows responsive design principles to ensure optimal user experience across devices, adapting seamlessly to different screen sizes and resolutions.
-
-and many more, including code architecture and reusability. 
-
-## <a name="quick-start">🤸 Quick Start</a>
-
-Follow these steps to set up the project locally on your machine.
-
-**Prerequisites**
-
-Make sure you have the following installed on your machine:
-
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/) (Node Package Manager)
-
-**Cloning the Repository**
-
+### 1. Clone the Repository
 ```bash
-git clone https://github.com/adrianhajdin/zoom-clone.git
-cd zoom-clone
+git clone <repository-url>
+cd i2i
 ```
 
-**Installation**
-
-Install the project dependencies using npm:
-
+### 2. Install Dependencies
 ```bash
-npm install
+npm install --legacy-deps-peer
+
 ```
 
-**Set Up Environment Variables**
-
-Create a new file named `.env` in the root of your project and add the following content:
+### 3. Environment Setup
+Create a `.env.local` file in the root directory:
 
 ```env
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
-
+# Clerk Authentication
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+CLERK_SECRET_KEY=your_clerk_secret_key
 NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
 NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
 
-NEXT_PUBLIC_STREAM_API_KEY=
-STREAM_SECRET_KEY=
+# Stream.io Video
+NEXT_PUBLIC_STREAM_API_KEY=your_stream_api_key
+STREAM_SECRET_KEY=your_stream_secret_key
+
+# Application
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
 ```
 
-Replace the placeholder values with your actual Clerk & getstream credentials. You can obtain these credentials by signing up on the [Clerk website](https://clerk.com/) and [getstream website](https://getstream.io/)
+### 4. Configure Services
 
-**Running the Project**
+#### Clerk Setup
+1. Create a Clerk application at [clerk.com](https://clerk.com)
+2. Get your publishable and secret keys
+3. Configure sign-in/sign-up redirects
 
+#### Stream.io Setup
+1. Create a Stream.io account at [getstream.io](https://getstream.io)
+2. Create a new video app
+3. Get your API key and secret
+
+### 5. Run the Development Server
 ```bash
 npm run dev
+# or
+yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
+Visit [http://localhost:3000](http://localhost:3000) to see the application.
 
-## <a name="snippets">🕸️ Snippets</a>
+## 🎯 Usage
 
-<details>
-<summary><code>app/globals.css</code></summary>
+### Getting Started
+1. **Sign Up/Sign In** - Create an account or log in using Clerk authentication
+2. **Dashboard** - Access the main dashboard with meeting options
+3. **Start Meeting** - Choose from instant, scheduled, or join existing meetings
 
-```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+### Meeting Types
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+#### Instant Meeting
+- Click "New Meeting" to start immediately
+- Share the generated link with participants
+- Begin your video call instantly
 
-/* ======== stream css overrides ======== */
-.str-video__call-stats {
-  max-width: 500px;
-  position: relative;
-}
+#### Scheduled Meeting
+- Click "Schedule Meeting"
+- Select date, time, and add description
+- Meeting link is generated for future use
+- Participants receive invitation details
 
-.str-video__speaker-layout__wrapper {
-  max-height: 700px;
-}
+#### Join Meeting
+- Use "Join Meeting" with an invitation link
+- Enter the meeting ID or paste the full URL
+- Join the video call directly
 
-.str-video__participant-details {
-  color: white;
-}
+#### Personal Room
+- Access your dedicated meeting space
+- Consistent meeting ID for recurring calls
+- Perfect for regular team meetings
 
-.str-video__menu-container {
-  color: white;
-}
+## 🏗️ Project Structure
 
-.str-video__notification {
-  color: white;
-}
-
-.str-video__participant-list {
-  background-color: #1c1f2e;
-  padding: 10px;
-  border-radius: 10px;
-  color: white;
-  height: 100%;
-}
-
-.str-video__call-controls__button {
-  height: 40px;
-}
-
-.glassmorphism {
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-}
-.glassmorphism2 {
-  background: rgba(18, 17, 17, 0.25);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-}
-
-/* ==== clerk class override ===== */
-
-.cl-userButtonPopoverActionButtonIcon {
-  color: white;
-}
-
-.cl-logoBox {
-  height: 40px;
-}
-.cl-dividerLine {
-  background: #252a41;
-  height: 2px;
-}
-
-.cl-socialButtonsIconButton {
-  border: 3px solid #565761;
-}
-
-.cl-internal-wkkub3 {
-  color: white;
-}
-.cl-userButtonPopoverActionButton {
-  color: white;
-}
-
-/* =============================== */
-
-@layer utilities {
-  .flex-center {
-    @apply flex justify-center items-center;
-  }
-
-  .flex-between {
-    @apply flex justify-between items-center;
-  }
-}
-
-/* animation */
-
-.show-block {
-  width: 100%;
-  max-width: 350px;
-  display: block;
-  animation: show 0.7s forwards linear;
-}
-
-@keyframes show {
-  0% {
-    animation-timing-function: ease-in;
-    width: 0%;
-  }
-
-  100% {
-    animation-timing-function: ease-in;
-    width: 100%;
-  }
-}
+```
+i2i/
+├── app/                    # Next.js App Router
+│   ├── (auth)/            # Authentication pages
+│   ├── (root)/            # Main application pages
+│   │   ├── (home)/        # Home dashboard
+│   │   ├── meeting/       # Meeting rooms
+│   │   ├── upcoming/      # Upcoming meetings
+│   │   ├── previous/      # Meeting history
+│   │   ├── recordings/    # Meeting recordings
+│   │   └── personal-room/ # Personal meeting room
+│   ├── globals.css        # Global styles
+│   └── layout.tsx         # Root layout
+├── components/            # Reusable components
+│   ├── ui/               # UI primitives
+│   ├── MeetingRoom.tsx   # Video call interface
+│   ├── MeetingModal.tsx  # Meeting creation modal
+│   ├── Navbar.tsx        # Navigation bar
+│   └── Sidebar.tsx       # Sidebar navigation
+├── hooks/                # Custom React hooks
+├── lib/                  # Utility functions
+├── providers/            # Context providers
+├── actions/              # Server actions
+├── constants/            # Application constants
+└── public/               # Static assets
 ```
 
-</details>
+## 🔧 Available Scripts
 
-<details>
-<summary><code>tailwind.config.ts</code></summary>
-
-```typescript
-import type { Config } from 'tailwindcss';
-
-const config = {
-  darkMode: ['class'],
-  content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-  ],
-  prefix: '',
-  theme: {
-    container: {
-      center: true,
-      padding: '2rem',
-      screens: {
-        '2xl': '1400px',
-      },
-    },
-    extend: {
-      colors: {
-        dark: {
-          1: '#1C1F2E',
-          2: '#161925',
-          3: '#252A41',
-          4: '#1E2757',
-        },
-        blue: {
-          1: '#0E78F9',
-        },
-        sky: {
-          1: '#C9DDFF',
-          2: '#ECF0FF',
-          3: '#F5FCFF',
-        },
-        orange: {
-          1: '#FF742E',
-        },
-        purple: {
-          1: '#830EF9',
-        },
-        yellow: {
-          1: '#F9A90E',
-        },
-      },
-      keyframes: {
-        'accordion-down': {
-          from: { height: '0' },
-          to: { height: 'var(--radix-accordion-content-height)' },
-        },
-        'accordion-up': {
-          from: { height: 'var(--radix-accordion-content-height)' },
-          to: { height: '0' },
-        },
-      },
-      animation: {
-        'accordion-down': 'accordion-down 0.2s ease-out',
-        'accordion-up': 'accordion-up 0.2s ease-out',
-      },
-      backgroundImage: {
-        hero: "url('/images/hero-background.png')",
-      },
-    },
-  },
-  plugins: [require('tailwindcss-animate')],
-} satisfies Config;
-
-export default config;
+```bash
+# Development
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run start        # Start production server
+npm run lint         # Run ESLint
 ```
 
-</details>
+## 🤝 Contributing
 
-<details>
-<summary><code>components/MeetingCard.tsx</code></summary>
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-```typescript
-"use client";
 
-import Image from "next/image";
 
-import { cn } from "@/lib/utils";
-import { Button } from "./ui/button";
-import { avatarImages } from "@/constants";
-import { useToast } from "./ui/use-toast";
 
-interface MeetingCardProps {
-  title: string;
-  date: string;
-  icon: string;
-  isPreviousMeeting?: boolean;
-  buttonIcon1?: string;
-  buttonText?: string;
-  handleClick: () => void;
-  link: string;
-}
 
-const MeetingCard = ({
-  icon,
-  title,
-  date,
-  isPreviousMeeting,
-  buttonIcon1,
-  handleClick,
-  link,
-  buttonText,
-}: MeetingCardProps) => {
-  const { toast } = useToast();
+## 🙏 Acknowledgments
 
-  return (
-    <section className="flex min-h-[258px] w-full flex-col justify-between rounded-[14px] bg-dark-1 px-5 py-8 xl:max-w-[568px]">
-      <article className="flex flex-col gap-5">
-        <Image src={icon} alt="upcoming" width={28} height={28} />
-        <div className="flex justify-between">
-          <div className="flex flex-col gap-2">
-            <h1 className="text-2xl font-bold">{title}</h1>
-            <p className="text-base font-normal">{date}</p>
-          </div>
-        </div>
-      </article>
-      <article className={cn("flex justify-center relative", {})}>
-        <div className="relative flex w-full max-sm:hidden">
-          {avatarImages.map((img, index) => (
-            <Image
-              key={index}
-              src={img}
-              alt="attendees"
-              width={40}
-              height={40}
-              className={cn("rounded-full", { absolute: index > 0 })}
-              style={{ top: 0, left: index * 28 }}
-            />
-          ))}
-          <div className="flex-center absolute left-[136px] size-10 rounded-full border-[5px] border-dark-3 bg-dark-4">
-            +5
-          </div>
-        </div>
-        {!isPreviousMeeting && (
-          <div className="flex gap-2">
-            <Button onClick={handleClick} className="rounded bg-blue-1 px-6">
-              {buttonIcon1 && (
-                <Image src={buttonIcon1} alt="feature" width={20} height={20} />
-              )}
-              &nbsp; {buttonText}
-            </Button>
-            <Button
-              onClick={() => {
-                navigator.clipboard.writeText(link);
-                toast({
-                  title: "Link Copied",
-                });
-              }}
-              className="bg-dark-4 px-6"
-            >
-              <Image
-                src="/icons/copy.svg"
-                alt="feature"
-                width={20}
-                height={20}
-              />
-              &nbsp; Copy Link
-            </Button>
-          </div>
-        )}
-      </article>
-    </section>
-  );
-};
+- [Stream.io](https://getstream.io/) for excellent video infrastructure
+- [Clerk](https://clerk.com/) for seamless authentication
+- [Vercel](https://vercel.com/) for hosting and deployment
+- [Next.js](https://nextjs.org/) team for the amazing framework
 
-export default MeetingCard;
-```
+---
 
-</details>
-
-## <a name="links">🔗 Links</a>
-
-Public assets used in the project can be found [here](https://drive.google.com/file/d/1ofTpWii_sCIdJ14uQ431xWVXpYgjtQ8Q/view?usp=sharing)
-
-## <a name="more">🚀 More</a>
-
-**Advance your skills with Next.js 14 Pro Course**
-
-Enjoyed creating this project? Dive deeper into our PRO courses for a richer learning adventure. They're packed with detailed explanations, cool features, and exercises to boost your skills. Give it a go!
-
-<a href="https://jsmastery.pro/next14" target="_blank">
-<img src="https://github.com/sujatagunale/EasyRead/assets/151519281/557837ce-f612-4530-ab24-189e75133c71" alt="Project Banner">
-</a>
-
-<br />
-<br />
-
-**Accelerate your professional journey with the Expert Training program**
-
-And if you're hungry for more than just a course and want to understand how we learn and tackle tech challenges, hop into our personalized masterclass. We cover best practices, different web skills, and offer mentorship to boost your confidence. Let's learn and grow together!
-
-<a href="https://www.jsmastery.pro/masterclass" target="_blank">
-<img src="https://github.com/sujatagunale/EasyRead/assets/151519281/fed352ad-f27b-400d-9b8f-c7fe628acb84" alt="Project Banner">
-</a>
-
-#
+**Built with ❤️ By ZAHRAN**
